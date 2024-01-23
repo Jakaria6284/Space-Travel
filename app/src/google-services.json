@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "681698210795",
+    "project_id": "spacetour-6218f",
+    "storage_bucket": "spacetour-6218f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681698210795:android:53171f26bb58dcfc361fae",
+        "android_client_info": {
+          "package_name": "com.ariyanjakaria.spacetour"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcaEBbB7HUAgVds7D3YLJDisU51W3xooc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681698210795:android:5d458832e2d0e45c361fae",
+        "android_client_info": {
+          "package_name": "com.example.fortest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcaEBbB7HUAgVds7D3YLJDisU51W3xooc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

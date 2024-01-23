@@ -1,15 +1,16 @@
 plugins {
     id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 android {
     namespace = "com.ariyanjakaria.spacetour"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.ariyanjakaria.spacetour"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -39,4 +40,15 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation ("com.airbnb.android:lottie:6.1.0")
+    implementation(platform("com.google.firebase:firebase-bom:32.2.2"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-firestore-ktx:24.7.0")
+    implementation("com.google.firebase:firebase-auth-ktx:22.1.1")
+    implementation("com.google.firebase:firebase-storage-ktx:20.2.1")
+    implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.27")
+    implementation ("com.github.bumptech.glide:glide:4.15.1")
+    implementation ("com.facebook.shimmer:shimmer:0.5.0")
+    implementation ("com.flaviofaria:kenburnsview:1.0.3")
+
 }

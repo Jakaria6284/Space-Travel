@@ -13,14 +13,55 @@
         android:theme="@style/Theme.SpaceTour"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".CricketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".videoActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".PPTActivity"
+            android:exported="false" />
+        <activity
+            android:name=".paymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view"
+            android:exported="false" />
+        <activity
+            android:name=".detailaboutplanetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".semiviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+
+
             </intent-filter>
         </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".signupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

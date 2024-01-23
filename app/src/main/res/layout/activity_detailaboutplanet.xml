@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".detailaboutplanetActivity">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/IMAGE"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:background="@drawable/imageback"
+        android:src="@drawable/mercury"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/nameplanet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MARS"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/IMAGE"
+        app:layout_constraintEnd_toEndOf="@+id/IMAGE"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="@+id/IMAGE"
+        app:layout_constraintTop_toTopOf="@+id/IMAGE"
+        app:layout_constraintVertical_bias="0.681" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_add_location_alt_24"
+
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milky Galaxy"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/IMAGE"
+        app:layout_constraintEnd_toEndOf="@+id/IMAGE"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="@+id/IMAGE"
+        app:layout_constraintTop_toTopOf="@+id/IMAGE"
+        app:layout_constraintVertical_bias="0.779" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IMAGE"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/imageback"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="About trip:"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintVertical_bias="0.779" />
+
+            <TextView
+                android:id="@+id/abouttrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="4dp"
+                android:layout_marginLeft="6dp"
+                android:paddingRight="2dp"
+                android:text="About aaaa amer soner bangla ami tomay valobashi chirodin tomar akhas tomar bathas amr pranee bajay bashi sonar bangla ami tomay valobashi o ma fagune toee amer bone gane bajay bashi o ma ograne toe vora khete ki dekhisi modhur hasi sonar bangla ami tomay valobashi "
+                android:textColor="#000000"
+                android:textSize="16sp"
+
+                app:layout_constraintVertical_bias="0.779" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="Photo Gallery"
+                android:textColor="#000000"
+                android:layout_marginTop="8dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintVertical_bias="0.779" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/photogalleryrecyclerview"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="6dp"
+               android:layout_marginBottom="8dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"/>
+
+            <include layout="@layout/img">
+
+            </include>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
